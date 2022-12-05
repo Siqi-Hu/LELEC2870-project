@@ -14,6 +14,6 @@ def catToFrequency(dataset, column_name, inplace=False):
     return dict_cat_freq
 
 X1 = pd.read_csv("X1.csv")
-dict_cat_freq = catToFrequency(X1['studio'], 'studio')
+dict_cat_freq = catToFrequency(X1, 'studio')
 torch.save(dict_cat_freq, "studio_freq")
 
